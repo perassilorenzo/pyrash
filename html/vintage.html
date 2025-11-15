@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <!-- HEADER (sempre presente) -->
+
+  <!-- HEADER -->
   <header>
     <a href="../html/index.html">
       <img src="../assets/pyrashBianco.png" alt="Pyrash" class="logo-img">
@@ -23,15 +24,50 @@
     </nav>
   </header>
 
-  <!-- CONTENUTO SPECIFICO -->
-  <section class="contenuto-pagina">
-    <h1>Nuovi Drop Pyrash</h1>
-    <p>Scopri le ultime uscite e pezzi esclusivi.</p>
+  <!-- HERO -->
+  <section class="hero">
+    <img src="../assets/sfondoIniziale.png" alt="Pyrash Background">
   </section>
+
+  <!-- CONTENUTO -->
+  <section class="contenuto-pagina">
+    <h1>Vintage</h1>
+  </section>
+
+  <!-- ARTICOLO -->
+  <div class="item" onclick="openPopup()">
+    <img src="../assets/WhatsApp Image 2025-11-15 at 18.48.01.jpeg" alt="">
+    <h3>Titolo Articolo</h3>
+    <p>€49</p>
+  </div>
+
+  <!-- OVERLAY -->
+  <div class="popup-overlay" id="popupOverlay"></div>
+
+  <!-- POPUP -->
+  <div class="popup" id="popup">
+    <button class="close-btn" onclick="closePopup()">✕</button>
+
+    <div class="popup-content">
+      <img src="../assets/WhatsApp Image 2025-11-15 at 18.48.01.jpeg" class="popup-img">
+
+      <div class="popup-info">
+        <h2>Titolo Articolo</h2>
+        <p class="price">€49</p>
+        <p class="desc">Descrizione lunga dell’articolo…</p>
+
+        <button onclick="buy()">ACQUISTA</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT ESTERNO -->
+  <script src="../js/init.js"></script>
 
   <!-- FOOTER -->
   <footer>
     <p>© 2025 Pyrash. Tutti i diritti riservati.</p>
   </footer>
+
 </body>
 </html>
