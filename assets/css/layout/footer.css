@@ -1,0 +1,8 @@
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #000;
+  font-size: 0.9em;
+  color: var(--text-soft);
+  margin-top: -50px;
+}
