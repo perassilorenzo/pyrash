@@ -1,5 +1,5 @@
 /* ============================
-   HERO
+HERO
 ============================ */
 
 .hero {
@@ -169,4 +169,14 @@
     bottom: 20px;
     left: 20px;
   }
+}
+
+@keyframes scaleUp {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+.card {
+  animation: scaleUp;
+  animation-timeline: scroll();
 }

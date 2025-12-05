@@ -1,46 +1,135 @@
+<!--  
+
+cose da sistemare:
+- Aggiungere meta description nel <head>.
+- Aggiungere una breve frase di introduzione al contatto (es. “Per collaborazioni, domande o informazioni…”).
+- Migliorare il testo della bio rendendolo più chiaro, breve e meno ripetitivo.
+- Aggiungere un indirizzo email di contatto cliccabile (mailto).
+- Aggiungere una frase su tempi di risposta (es. “Rispondo entro 24–48h”).
+- Aggiungere un form contatti semplice (nome + email + messaggio).
+- Aggiungere un link alle pagine social cliccabile, non solo testo.
+- Aggiungere una piccola sezione “Per collaborazioni / PR / business”.
+- Aggiungere info su dove seguire gli aggiornamenti del brand.
+- Aggiungere una mini-sezione “Mission & valori del brand” (2–3 frasi).
+- Aggiungere link nel footer a Privacy, Cookie, Termini.
+- Sistemare il testo “Chi sono” rendendolo meno diaristico e più professionale.
+- Aggiungere un messaggio finale che invita l’utente a scriverti (“Scrivimi quando vuoi”).
+
+-->
+
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contatti - Pyrash</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <!-- HEADER (sempre presente) -->
-  <header>
-    <a href="index.html">
-      <img src="assets/img/pyrashBianco.png" alt="Pyrash" class="logo-img">
-    </a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="drop.html">Drop</a></li>
-        <li><a href="handmade.html">Handmade</a></li>
-        <li><a href="vintage.html">Vintage</a></li>
-        <li><a href="contatti.html" class="active">Contatti</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Perassi Lorenzo">
+    <meta name="description" content="Contatta Pyrash per collaborazioni, domande o informazioni. Scopri come seguire gli aggiornamenti del brand e conoscere la nostra missione e valori.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - Pyrash</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
 
-  <!-- hero -->
-  <section class="contenuto-contatti">
-    <h1>Chi sono:</h1>
-    <p>Sono Lorenzo Perassi, un semplice studente alle superiori che vuole lasciare qualcosa nel mondo e in questo momento si è fissato sulla moda. Sono un ragazzo che ha voglia di fare e si sta impegnando molto tra lo studio, i video e il cucito, oltre che alla vita sociale. <br>Sono convinto che per avere successo sia necessario il duro lavoro e credo nel raggiungimento dei miei obiettivi. <br>In questo momento il progetto più importante che sto portando avanti è questo, dove ho e sto continuamente lavorato totalmente da solo, lo sviluppo di questo sito, tramite le mie conoscenze scolastiche e da autodidatta, i video e le idee, nonostante non sono mai abbastanza e la creazione dell'abbigliamento. <br>Spero che il mio lavoro ripagherà un giorno e che riuscirò a migliorare e crescere, intanto spero anche che l'esperienza qui e sulle mie pagine sia accogliente e intanto ti invito a seguirmi se già non lo fai.</p>
-    <h2><i>Grazie</i></h2>
-  </section>
+    <!-- HEADER  -->
 
-  <!-- pagine -->
-   <section class="pagine-social">
-    <p class="ig">Instagram: <br>@diario_di_uno_09 <br>@pyrash.official</p>
-    <p class="tt">TikTok: <br>@diario_di_uno_09</p>
-    <p class="yt">Youtube: <br>@diario_di_uno_09</p>
-    <p class="vt">Vinted: <br>@pyrash</p>
-   </section>
+    <header>
+      <a href="index.html">
+        <img src="assets/img/pyrashBianco.png" alt="Pyrash" class="logo-img">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="drop.html">Drop</a></li>
+          <li><a href="handmade.html">Handmade</a></li>
+          <li><a href="vintage.html">Vintage</a></li>
+          <li><a href="contatti.html" class="active">Contatti</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Pyrash. Tutti i diritti riservati.</p>
-  </footer>
-</body>
+    <!-- hero -->
+
+    <section class="contenuto-contatti">
+      <h1>Chi sono:</h1>
+      <!-- 
+      Rendi il testo chiaro, breve e diretto, meno ripetitivo.
+      Evidenzia chi sei, cosa fai e cosa offre Pyrash.
+      -->
+      <!-- 
+      Meno diaristico, più professionale e leggibile.
+      Focus su competenze, progetti e valori.
+      -->
+      <p>Sono Lorenzo Perassi, un semplice studente alle superiori che vuole lasciare qualcosa nel mondo e in questo momento si è fissato sulla moda. Sono un ragazzo che ha voglia di fare e si sta impegnando molto tra lo studio, i video e il cucito, oltre che alla vita sociale. <br>Sono convinto che per avere successo sia necessario il duro lavoro e credo nel raggiungimento dei miei obiettivi. <br>In questo momento il progetto più importante che sto portando avanti è questo, dove ho e sto continuamente lavorato totalmente da solo, lo sviluppo di questo sito, tramite le mie conoscenze scolastiche e da autodidatta, i video e le idee, nonostante non sono mai abbastanza e la creazione dell'abbigliamento. <br>Spero che il mio lavoro ripagherà un giorno e che riuscirò a migliorare e crescere, intanto spero anche che l'esperienza qui e sulle mie pagine sia accogliente e intanto ti invito a seguirmi se già non lo fai.</p>
+      <h2><i>Grazie</i></h2>
+    </section>
+
+    <form action="">
+      <h1>Contattami:</h1>
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="messaggio">Messaggio:</label><br>
+      <textarea id="messaggio" name="messaggio" rows="4" required></textarea><br><br>
+      <input type="submit" value="Invia">
+      <!-- totalmente da sistemare:
+      Una frase breve sopra il form o la sezione contatti che invita l’utente a scrivere.
+      Esempio: “Per collaborazioni, domande o informazioni, contattami qui.”  -->
+      <!-- 
+      Frase sui tempi di risposta
+      Aumenta affidabilità e chiarezza per l’utente.
+      Esempio: “Rispondo entro 24–48 ore.”
+      -->
+      <!-- 
+      Nome + email + messaggio, per facilitare l’invio di richieste direttamente dal sito.
+      -->
+    </form>
+
+    <!-- pagine -->
+
+    <section class="pagine-social">
+      <p class="ig">Instagram: <br>@diario_di_uno_09 <br>@pyrash.official</p>
+      <p class="tt">TikTok: <br>@diario_di_uno_09</p>
+      <p class="yt">Youtube: <br>@diario_di_uno_09</p>
+      <p class="vt">Vinted: <br>@pyrash</p>
+      <!-- 
+      Trasforma i riferimenti social da testo semplice a link veri.
+      Esempio: <a href="https://instagram.com/pyrash.official" target="_blank">@pyrash.official</a>
+      -->
+    </section>
+
+    <section>
+      <!-- 
+      Una mini-sezione dedicata alle richieste professionali o partnership.
+      -->
+    </section>
+
+    <section>
+      <!-- 
+      Includere brevi indicazioni su social, newsletter o altri canali ufficiali.
+      -->
+    </section>
+
+    <section>
+      <!-- 
+      2–3 frasi che spiegano cosa rappresenta Pyrash, il focus sulla creatività, handmade, sostenibilità o stile.
+      -->
+    </section>
+
+    <section>
+      <!-- 
+      Una frase motivante per incoraggiare l’utente a contattarti.
+      Esempio: “Scrivimi quando vuoi, sarò felice di risponderti!”
+      -->
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <p>© 2025 Pyrash. Tutti i diritti riservati.</p>
+      <!-- 
+      Link nel footer a Privacy, Cookie, Termini
+      Per completezza legale e trasparenza.
+      -->
+    </footer>
+  </body>
 </html>

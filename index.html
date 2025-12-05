@@ -1,17 +1,43 @@
-  <!DOCTYPE html>
+<!-- 
+ 
+cose da sistemare:
+- Micro-descrizione più completa nel tag <title>.
+- Testo alternativo del logo più descrittivo.
+- Sottotitolo nella hero sotto “Main Drop”.
+- Micro-call to action nella hero.
+- Titolo generale per la sezione delle categorie/pezzi.
+- Descrizioni delle card più specifiche/accattivanti.
+- Testo introduttivo sopra il form newsletter.
+- Mini testo privacy sotto il form newsletter.
+- Frase su cancellazione dati nella privacy mini.
+- Link alla privacy completa nella privacy mini.
+- Link alla Privacy Policy nel footer.
+- Link ai Termini & Condizioni nel footer.
+- Email di supporto o contatto nel footer.
+- Link ai social nel footer.
+- Meta description nel <head>.
+- Gerarchia titoli corretta (un solo H1, poi H2/H3) 
+
+-->
+
+<!DOCTYPE html>
 <html lang="it">
   <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Perassi Lorenzo">
+    <meta name="description" content="Pyrash - Brand handmade, drop esclusivi e selezione vintage. Scopri capi unici creati a mano, collezioni limitate e pezzi second-hand scelti con cura.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pyrash</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/init.js"></script>
+    <title>Pyrash - Articoli Unici di Moda Sostenibile</title>
   </head>
   <body>
     
     <!-- HEADER -->
+    
     <header>
       <a href="index.html">
-        <img src="assets/img/pyrashBianco.png" alt="Pyrash" class="logo-img" title="PYRASH">
+        <img src="assets/img/pyrashBianco.png" alt="Logo Pyrash - Articoli Unici di Moda Sostenibile" class="logo-img" title="PYRASH">
       </a>
       <nav>
         <ul>
@@ -25,6 +51,7 @@
     </header>
     
     <!-- HERO -->
+
     <section class="hero">
       <a href="drop.html">
         <video autoplay loop muted playsinline class="background-video">
@@ -35,18 +62,22 @@
 
       <!-- TESTO SUL VIDEO -->
       <div class="hero-text">
-        <h1>Main<br>Drop</h1>
+        <h1><i>New 2016</i></h1>
+        <p>Scopri i nostri ultimi arrivi di moda sostenibile.</p>
+        <a href="drop.html" class="btn-hero">Esplora Ora</a>
       </div>
     </section>
 
-
     <!-- SEZIONE PEZZI -->
+
+    <h2>Esplora le nostre collezioni</h2>
+    
     <section class="pezzi">
       <a href="drop.html" class="card-link">
         <div class="card">
           <img src="assets/img/WhatsApp Image 2025-11-15 at 18.48.01.jpeg" alt="Drop Pyrash">
-          <h2>Drop</h2>
-          <p>Pezzi delle nuove collezioni Pyrash.</p>
+          <h2><i>Drop</i></h2>
+          <p>Drop esclusivi, disponibili in quantità limitata!</p>
         </div>
       </a>
 
@@ -54,7 +85,7 @@
         <div class="card">
           <img src="assets/img/WhatsApp Image 2025-11-15 at 18.49.48.jpeg" alt="Handmade Pyrash">
           <h2>Handmade</h2>
-          <p>Capi cuciti e personalizzati a mano.</p>
+          <p>Pezzi handmade cuciti interamente a mano, unici e irripetibili!</p>
         </div>
       </a>
 
@@ -62,31 +93,74 @@
         <div class="card">
           <img src="assets/img/WhatsApp_Image_2025-11-15_at_18.47.09-removebg-preview.png" alt="Vintage Pyrash">
           <h2>Vintage</h2>
-          <p>Selezione di second-hand unici.</p>
+          <p>Vintage selezionato personalmente, ogni capo una storia!</p>
         </div>
       </a>
     </section>
 
-    <!-- NEWSLETTER -->
-    <section class="newsletter">
-      <h2>Iscriviti alla Newsletter</h2>
-      <form action="mailto:pyrash.contact@gmail.com" method="post" enctype="text/plain">
-        <input type="email" name="email" placeholder="Inserisci la tua email" required>
-        <button type="submit">Iscriviti</button>
-      </form>
+    <!-- richieste -->
+    <section class="cta">
+      <button>Richiedi un custom</button>
+      <button>Riparazione</button>
     </section>
-
-    <!-- PRIVACY MINI -->
-    <section class="privacy-mini">
-      <p>
-        Pyrash rispetta la tua privacy. Le informazioni raccolte tramite la newsletter saranno usate esclusivamente per aggiornamenti sui prodotti e promozioni.
-      </p>
-    </section>
-
+    
     <!-- FOOTER -->
     <footer>
+      <section class="grid-footer">
+        <!-- NEWSLETTER -->
+  
+        <!-- da modificare: 
+        - utilizzo di google forms (url post dedicato)
+        - campo honeypot per evitare spam
+        - iframe nascosto per la risposta del form
+        - messaggio di feedback
+        - controllo locale (avvisa se la mail è già usata nel device)
+        - salvataggio locale delle mail nel browser
+        - design coerente con il sito  -->
+        
+        <section class="newsletter">
+
+          <h2>Iscriviti per ricevere anteprime dei drop, sconti e novità sul brand!</h2>
+          <h2>Iscriviti alla Newsletter</h2>
+          <form action="mailto:pyrash.contact@gmail.com" method="post" enctype="text/plain">
+            <input type="email" name="email" placeholder="Inserisci la tua email" required>
+            <button type="submit">Iscriviti</button>
+          </form>
+
+        </section>
+
+        <section class="contatti">
+          <a href="">
+            <img src="" alt="">
+            <p></p>
+          </a>
+        </section>
+
+      </section>
+
+      <!-- PRIVACY MINI -->
+
+      <!-- da sistemare leggermente il testo delle privacy policy / provacy mini -->
+      <!-- aggiungere anche un link per le pagine dedicate alla privacy  -->
+      
+      <section class="privacy-mini">
+        <a href="">
+          <p>
+            Pyrash rispetta la tua privacy. Le informazioni raccolte tramite la newsletter saranno usate esclusivamente per aggiornamenti sui prodotti e promozioni. Niente spam. Useremo la tua email solo per inviarti aggiornamenti sui prodotti. Puoi annullare l’iscrizione in qualsiasi momento.
+          </p>
+        </a>
+      </section>
+      
+
+      <!-- da sistemare leggermente il testo del footer -->
+      <!-- aggiungere anche un link per le pagine dedicate al copy -->
+      
+      <a href="">
+        <!-- termini e condizioni del sito -->
+      </a>
       <p>© 2025 Pyrash. Tutti i diritti riservati.</p>
       <p>Disclaimer: i contenuti del sito sono a scopo informativo e commerciale. Le immagini e i marchi sono proprietà dei rispettivi proprietari.</p>
+      <!-- aggiungere i contatti come su pagina contatti -->
     </footer>
 
   </body>

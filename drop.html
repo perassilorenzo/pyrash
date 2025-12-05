@@ -1,15 +1,41 @@
+<!-- 
+
+cose da sistemare:
+- Meta description nel <head>.
+- Alt text descrittivi per tutte le immagini dei prodotti.
+- Titolo principale della pagina (H1) — al momento mancante.
+- Sottotitolo/intro breve che spiega cos’è il Drop.
+- Testo vero al posto di tutto il “Lorem ipsum”.
+- Descrizioni più specifiche per ogni articolo.
+- Testo del pulsante “ACQUISTA” più chiaro (es. “Acquista ora” o “Ordina su Instagram”).
+- Sezione “Drop Story” più narrativa e legata al brand.
+- Micro-descrizione dei materiali o del processo creativo sotto le card.
+- Aggiungere una sezione “Informazioni spedizioni/tempi” o un mini disclaimer.
+- Aggiungere nel footer link a: Privacy, Termini & Condizioni, Contatti.
+- Aggiungere social nel footer.
+- Aggiungere eventuale dicitura “Tutti i prodotti sono limited” (se coerente con Pyrash).
+- Coerenza nei titoli (h2/h3) delle sezioni Drop 1 / Drop 2.
+
+-->
+<!-- 
+Se il drop è limitato, comunicare chiaramente questo aumenta urgenza e percezione di esclusività.
+-->
+
 <!DOCTYPE html>
 <html lang="it">
   <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Perassi Lorenzo">
+    <meta name="description" content="Scopri l'ultimo Drop di Pyrash: collezioni esclusive di abbigliamento handmade e vintage, create con passione e attenzione ai dettagli. Pezzi unici, disponibili in quantità limitata.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drop - Pyrash</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/init.js"></script>
+    <title>Drop - Pyrash</title>
   </head>
   <body>
 
     <!-- HEADER -->
+
     <header>
       <a href="index.html">
         <img src="assets/img/pyrashBianco.png" alt="Pyrash" class="logo-img" title="PYRASH">
@@ -26,140 +52,263 @@
     </header>
 
     <!-- HERO -->
+
     <section class="hero">
       <img src="assets/img/sfondoIniziale.png" alt="Pyrash Background" title="PYRASH">
     </section>
 
     <!-- STORIA DROP -->
+
     <section class="drop-story">
-      <br>
-      <h2 class="drop-title">Lorem ipsum</h2>
-      <br>
-      <h2>Curabitur pretium</h2>
+      <!-- 
+      Racconta il Drop come fosse una storia:
+      Perché esiste questa collezione
+      Quali emozioni o stile vuole trasmettere
+      Eventuale legame con la filosofia Pyrash
+      -->
+      <h1 class="drop-title">Drop 2025 - Collezione Limitata Pyrash</h1>
+      <h2 class="drop-mini-title">Pezzi unici, handmade e vintage customizzati - disponibili solo per questa collezione</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam possimus quaerat deleniti modi debitis illo nesciunt explicabo, quas blanditiis eos, magni voluptas nihil, cum magnam accusamus id quos quibusdam ea.
+        Saepe optio aspernatur nemo alias doloremque sapiente eveniet harum aperiam quos corrupti distinctio cumque amet est corporis earum consectetur, blanditiis, odit ea esse soluta dicta, deserunt animi? Quidem, laudantium ad?
       </p>
       <p>
-        Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, porro in nobis libero consequatur quia quaerat ipsa at, cumque rerum illo consectetur aliquam voluptatibus nulla asperiores sit eum cum culpa.
+        Vero impedit culpa quo consequatur error harum voluptatem voluptas, molestiae, veniam rerum aliquid qui! Quod dolorum, deleniti distinctio ut doloribus debitis, quisquam laboriosam facere asperiores aliquam maiores praesentium, magnam unde.
+        Quaerat natus deserunt animi doloremque, voluptatibus voluptates consectetur eum, eveniet impedit id officia dolore tempora ipsam corporis ex aliquid atque dolorum aspernatur amet pariatur autem. Itaque, voluptas. Nesciunt, nostrum deleniti.
       </p>
     </section>
 
     <!-- DROP GRID 01 -->
+
     <section class="drop-section">
+
       <!-- GRID DEI PRODOTTI -->
-      <selection class="grid-prodotti">
 
-        <!-- CARD -->
-        <div class="card" onclick="openPopup()">
-          <img src="assets/img/WhatsApp Image 2025-11-15 at 18.48.01.jpeg" alt="">
-          <h3>Titolo Articolo</h3>
-          <p class="prezzo">€49</p>
-        </div>
-
-      </selection>
-
-      <!-- OVERLAY -->
-      <div class="popup-overlay" id="popupOverlay"></div>
-
-      <!-- POPUP -->
-      <div class="popup" id="popup">
-        <button class="close-btn" onclick="closePopup()">✕</button>
-
-        <div class="popup-content">
-          <img src="assets/img/WhatsApp Image 2025-11-15 at 18.48.01.jpeg" class="popup-img">
-
-          <div class="popup-info">
-            <h2>Titolo Articolo</h2>
-            <p class="price">€49</p>
-            <p class="desc">Descrizione lunga dell’articolo…</p>
-
-            <button class="btn-buy" onclick="buy()">ACQUISTA</button>
-          </div>
-        </div>
-      </div>
-
-              <!-- GRID DEI PRODOTTI -->
       <section class="grid-prodotti">
 
-        <!-- CARD -->
+        <!-- CARD 1 -->
+
         <div class="card" onclick="openPopup()">
           <img src="assets/img/WhatsApp Image 2025-11-15 at 18.48.01.jpeg" alt="">
           <h3>Titolo Articolo</h3>
           <p class="prezzo">€49</p>
         </div>
 
-      </section>
+        
+        <!-- OVERLAY -->
 
-      <!-- OVERLAY -->
-      <div class="popup-overlay" id="popupOverlay"></div>
+        <div class="popup-overlay" id="popupOverlay"></div>
+        
+        <!-- POPUP -->
 
-      <!-- POPUP -->
-      <div class="popup" id="popup">
-        <button class="close-btn" onclick="closePopup()">✕</button>
-
-        <div class="popup-content">
-          <img src="assets/img/WhatsApp_Image_2025-11-15_at_18.47.09-removebg-preview.png" class="popup-img">
-
-          <div class="popup-info">
-            <h2>Titolo Articolo</h2>
-            <p class="price">€49</p>
-            <p class="desc">Descrizione lunga dell’articolo…</p>
-
-            <button class="btn-buy" onclick="buy()">ACQUISTA</button>
+        <div class="popup" id="popup">
+          <button class="close-btn" onclick="closePopup()">✕</button>
+          
+          <div class="popup-content">
+            <img src="assets/img/WhatsApp Image 2025-11-15 at 18.48.01.jpeg" class="popup-img">
+            
+            <div class="popup-info">
+              <h2>Titolo Articolo</h2>
+              <p class="price">€49</p>
+              <p class="desc">Descrizione lunga dell'articolo…</p>
+              
+              <button class="btn-buy" onclick="buy()">ACQUISTA</button>
+            </div>
           </div>
         </div>
-      </div>
-        <!-- CARD -->
+        
+        <!-- CARD 2 -->
+
         <div class="card" onclick="openPopup()">
           <img src="assets/img/WhatsApp Image 2025-11-15 at 18.48.01.jpeg" alt="">
           <h3>Titolo Articolo</h3>
           <p class="prezzo">€49</p>
         </div>
+        
+        <!-- OVERLAY -->
 
-      </section>
+        <div class="popup-overlay" id="popupOverlay"></div>
+        
+        <!-- POPUP -->
 
-      <!-- OVERLAY -->
-      <div class="popup-overlay" id="popupOverlay"></div>
-
-      <!-- POPUP -->
-      <div class="popup" id="popup">
-        <button class="close-btn" onclick="closePopup()">✕</button>
-
-        <div class="popup-content">
-          <img src="assets/img/WhatsApp_Image_2025-11-15_at_18.47.09-removebg-preview.png" class="popup-img">
-
-          <div class="popup-info">
-            <h2>Titolo Articolo</h2>
-            <p class="price">€49</p>
-            <p class="desc">Descrizione lunga dell’articolo…</p>
-
-            <button class="btn-buy" onclick="buy()">ACQUISTA</button>
+        <div class="popup" id="popup">
+          <button class="close-btn" onclick="closePopup()">✕</button>
+          
+          <div class="popup-content">
+            <img src="assets/img/WhatsApp_Image_2025-11-15_at_18.47.09-removebg-preview.png" class="popup-img">
+            
+            <div class="popup-info">
+              <h2>Titolo Articolo</h2>
+              <p class="price">€49</p>
+              <p class="desc">Descrizione lunga dell’articolo…</p>
+              
+              <button class="btn-buy" onclick="buy()">ACQUISTA</button>
+            </div>
           </div>
         </div>
-      </div>
 
+        <!-- CARD 3 -->
+
+        <div class="card" onclick="openPopup()">
+          <img src="assets/img/WhatsApp Image 2025-11-15 at 18.48.01.jpeg" alt="">
+          <h3>Titolo Articolo</h3>
+          <p class="prezzo">€49</p>
+        </div>
+        
+        <!-- OVERLAY -->
+
+        <div class="popup-overlay" id="popupOverlay"></div>
+        
+        <!-- POPUP -->
+
+        <div class="popup" id="popup">
+          <button class="close-btn" onclick="closePopup()">✕</button>
+          
+          <div class="popup-content">
+            <img src="assets/img/WhatsApp_Image_2025-11-15_at_18.47.09-removebg-preview.png" class="popup-img">
+            
+            <div class="popup-info">
+              <h2>Titolo Articolo</h2>
+              <p class="price">€49</p>
+              <p class="desc">Descrizione lunga dell'articolo…</p>
+              
+              <button class="btn-buy" onclick="buy()">ACQUISTA</button>
+            </div>
+          </div>
+        </div>
+        
+      </section>
     </section>
 
     <!-- DROP DESIGN -->
+
     <section class="drop-design">
-      <h2>Curabitur pretium</h2>
+      <h2 class="drop-mini-title">Curabitur pretium</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo in consequatur obcaecati ea, tempore beatae consequuntur odio harum iste nesciunt corporis doloribus adipisci totam rem saepe unde fuga minus nisi?
+        Porro facere dolore pariatur molestiae assumenda similique accusamus amet fugit ullam laudantium vel, a vitae atque maiores optio eveniet cumque modi? Non accusamus aliquam maiores quasi modi fugit ipsa vel!
       </p>
     </section>
 
     <!-- DROP GRID 02 -->
     <section class="drop-section">
-      <div class="drop-grid">
-        <div class="drop-item"><img src="assets/img/drop01-6.jpg" alt="Drop 01 - Articolo 4"></div>
-        <div class="drop-item"><img src="assets/img/drop01-7.jpg" alt="Drop 01 - Articolo 5"></div>
-        <div class="drop-item"><img src="assets/img/drop01-8.jpg" alt="Drop 01 - Articolo 6"></div>
-      </div>
+
+      <!-- GRID DEI PRODOTTI -->
+
+      <section class="grid-prodotti">
+
+        <!-- CARD 4 -->
+
+        <div class="card" onclick="openPopup()">
+          <img src="assets/img/WhatsApp Image 2025-11-15 at 18.48.01.jpeg" alt="">
+          <h3>Titolo Articolo</h3>
+          <p class="prezzo">€49</p>
+        </div>
+        
+        <!-- OVERLAY -->
+
+        <div class="popup-overlay" id="popupOverlay"></div>
+        
+        <!-- POPUP -->
+
+        <div class="popup" id="popup">
+          <button class="close-btn" onclick="closePopup()">✕</button>
+          
+          <div class="popup-content">
+            <img src="assets/img/WhatsApp Image 2025-11-15 at 18.48.01.jpeg" class="popup-img">
+            
+            <div class="popup-info">
+              <h2>Titolo Articolo</h2>
+              <p class="price">€49</p>
+              <p class="desc">Descrizione lunga dell’articolo…</p>
+              
+              <button class="btn-buy" onclick="buy()">ACQUISTA</button>
+            </div>
+          </div>
+        </div>
+                
+        <!-- CARD 5 -->
+
+        <div class="card" onclick="openPopup()">
+          <img src="assets/img/WhatsApp Image 2025-11-15 at 18.48.01.jpeg" alt="">
+          <h3>Titolo Articolo</h3>
+          <p class="prezzo">€49</p>
+        </div>
+        
+        
+        <!-- OVERLAY -->
+
+        <div class="popup-overlay" id="popupOverlay"></div>
+        
+        <!-- POPUP -->
+
+        <div class="popup" id="popup">
+          <button class="close-btn" onclick="closePopup()">✕</button>
+          
+          <div class="popup-content">
+            <img src="assets/img/WhatsApp_Image_2025-11-15_at_18.47.09-removebg-preview.png" class="popup-img">
+            
+            <div class="popup-info">
+              <h2>Titolo Articolo</h2>
+              <p class="price">€49</p>
+              <p class="desc">Descrizione lunga dell'articolo…</p>
+              
+              <button class="btn-buy" onclick="buy()">ACQUISTA</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+
+        <div class="card" onclick="openPopup()">
+          <img src="assets/img/WhatsApp Image 2025-11-15 at 18.48.01.jpeg" alt="">
+          <h3>Titolo Articolo</h3>
+          <p class="prezzo">€49</p>
+        </div>
+        
+        
+        <!-- OVERLAY -->
+        
+        <div class="popup-overlay" id="popupOverlay"></div>
+        
+        <!-- POPUP -->
+        
+        <div class="popup" id="popup">
+          <button class="close-btn" onclick="closePopup()">✕</button>
+          
+          <div class="popup-content">
+            <img src="assets/img/WhatsApp_Image_2025-11-15_at_18.47.09-removebg-preview.png" class="popup-img">
+            
+            <div class="popup-info">
+              <h2>Titolo Articolo</h2>
+              <p class="price">€49</p>
+              <p class="desc">Descrizione lunga dell’articolo…</p>
+              
+              <button class="btn-buy" onclick="buy()">ACQUISTA</button>
+            </div>
+          </div>
+        </div>
+        
+      </section>
     </section>
-    <br><br><br>
+
     <!-- FOOTER -->
+
     <footer>
       <p>© 2025 Pyrash. Tutti i diritti riservati.</p>
+      <!-- 
+      disclamer legali e link obbligatori da inserire nel footer:
+      Informazioni pratiche importanti per l’utente:
+      “Spedizione in 3–5 giorni lavorativi”
+      “Tutti i prodotti sono limited”
+      Eventuale disclaimer sui custom o disponibilità
+      Include link a:
+      Privacy Policy
+      Termini & Condizioni
+      Contatti
+      Social (IG, TikTok, YouTube)
+      -->
     </footer>
 
   </body>
